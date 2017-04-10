@@ -77,12 +77,9 @@ public class Flyer {
         final Wall w4 = new Wall();
         final Wall w5 = new Wall();
         final Wall w6 = new Wall();
-        final Wall w7 = new Wall();
         final Wall w8 = new Wall();
-        final Wall w9 = new Wall();
         final Wall w10 = new Wall();
         final Wall w11 = new Wall();
-        final Wall w12 = new Wall();
         final Wall w13 = new Wall();
         final Wall w14= new Wall();
         final Wall w15 = new Wall();
@@ -90,14 +87,14 @@ public class Flyer {
         final Wall w17 = new Wall();
         final Wall w18 = new Wall();
       
-        final Wall w20 = new Wall();
+
         final Wall w21 = new Wall();
         final Wall w22 = new Wall();
        
-        final Wall w24 = new Wall();
+
         final Wall w25 = new Wall();
         final Wall w26 = new Wall();
-        final Wall w27 = new Wall();
+
         final Wall wBorderHorBot = new Wall();
         final Wall wBorderVertLeft = new Wall();
         final Wall wBorderVertRight = new Wall();
