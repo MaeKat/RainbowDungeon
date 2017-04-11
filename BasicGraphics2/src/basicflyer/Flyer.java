@@ -45,7 +45,7 @@ public class Flyer {
                 g.setColor(Color.DARK_GRAY);
                 g.fillRect(100,100, 450, 450);
                // g.fillRect(0, 0, 550, 550);
-                g.setColor(Color.CYAN);
+                g.setColor(Color.CYAN);//temp menu
                 g.fillRect(50, 0, 550, 50);
 
                // g.setColor(Color.black);
@@ -57,8 +57,7 @@ public class Flyer {
         bf.show();
 
       //  final Wall w = new Wall();
-        final Wall w1 = new Wall();
-        final Wall w2= new Wall();
+
         final Wall w3 = new Wall();
         final Wall w4 = new Wall();
         final Wall w5 = new Wall();
@@ -73,20 +72,15 @@ public class Flyer {
         final Wall w17 = new Wall();
         final Wall w18 = new Wall();
       
-
         final Wall w21 = new Wall();
         final Wall w22 = new Wall();
-       
-
-        final Wall w25 = new Wall();
-        final Wall w26 = new Wall();
-
+        
         final Wall wBorderHorBot = new Wall();
         final Wall wBorderVertLeft = new Wall();
         final Wall wBorderVertRight = new Wall();
         final Wall wBorderHorTop  = new Wall();
     
-      //   final Wall w28 = new Wall();
+
         final Falcon f = new Falcon();
         final Castle castle1 = new Castle();
         final Castle castle2 = new Castle();
