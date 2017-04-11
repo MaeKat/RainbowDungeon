@@ -63,7 +63,7 @@ public class Bandit extends Enemy {
        public void processEvent(SpriteCollisionEvent se) {
   
            AudioClip clip = new ReusableClip("shock.wav");
-
+           AudioClip clip2 = new ReusableClip("die.wav");
         if (se.eventType == CollisionEventType.SPRITE) {
             if (se.sprite2 instanceof Falcon) {//if hit move down one with barricade
                se.sprite2.setX( se.sprite2.getX());
@@ -79,7 +79,7 @@ public class Bandit extends Enemy {
             if (se.sprite2 instanceof Plasma) {//bandit takes 3 shots to disable      
               counter++;
                 if (counter ==3){
-                clip.play();
+                clip2.play();
                 setActive(false);
                 se.sprite2.setActive(false);
                 }
