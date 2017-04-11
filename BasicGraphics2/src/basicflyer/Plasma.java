@@ -40,7 +40,7 @@ class Plasma extends Sprite {
      * @param sc 
      */
     public void init(SpriteComponent sc) {
-        setPicture(makeBall(Color.red,10));
+        setPicture(makeBall(Color.yellow,10));
     }
     
     /**

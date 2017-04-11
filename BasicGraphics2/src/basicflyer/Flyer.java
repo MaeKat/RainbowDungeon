@@ -46,23 +46,9 @@ public class Flyer {
                 g.fillRect(100,100, 450, 450);
                // g.fillRect(0, 0, 550, 550);
                 g.setColor(Color.CYAN);
-                g.fillRect(0, 0, 600, 90);
+                g.fillRect(50, 0, 550, 50);
 
-                g.setColor(Color.black);
-
-                // g.fillRect(100, 100, 400, 400);//sets board
-              /*  g.fillRect(100, 100, 400, 400);
-                for (int i = 100; i <= 400; i += 100) {
-                    for (int j = 100; j <= 400; j += 100) {
-                        g.clearRect(i, j, 50, 50);
-                    }
-                }
-
-                for (int i = 150; i <= 450; i += 100) {
-                    for (int j = 150; j <= 450; j += 100) {
-                        g.clearRect(i, j, 50, 50);
-                    }
-                }*/
+               // g.setColor(Color.black);
 
             }
         };
@@ -140,8 +126,7 @@ public class Flyer {
         });
         Random rand = new Random();
 
-        w1.init(sc, 100, 200);//23
-        w2.init(sc, 100, 250);
+     
         w3.init(sc, 100, 300);//Stairs
         
         w4.init(sc, 150, 300);
@@ -157,18 +142,12 @@ public class Flyer {
         w14.init(sc, 300, 400);
         w15.init(sc, 300, 500);
         
-    
         w17.init(sc, 350, 350);
         w18.init(sc, 350, 500);
         
-    
         w21.init(sc, 400, 350);
         w22.init(sc, 400, 400);
-        
-      
-        w25.init(sc, 450, 350);
-        w26.init(sc, 450, 400);
-        
+   
         //Border Walls
         wBorderHorTop.intiBorderHor(sc, 50, 100);//Top
         wBorderHorBot.intiBorderHor(sc, 550, 50);//Bottom
