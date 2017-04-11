@@ -148,14 +148,11 @@ public class Flyer {
         w5.init(sc, 150, 400);
         w6.init(sc, 150, 500);
         
-        //w7.init(sc, 200, 200);
         w8.init(sc, 200, 350);
         
-      //  w9.init(sc, 250, 200);
         w10.init(sc, 250, 300);
         w11.init(sc, 250, 450);
         
-        //w12.init(sc, 300, 200);
         w13.init(sc, 300, 250);
         w14.init(sc, 300, 400);
         w15.init(sc, 300, 500);
@@ -165,16 +162,13 @@ public class Flyer {
         w18.init(sc, 350, 500);
         
     
-       // w20.init(sc, 400, 250);
         w21.init(sc, 400, 350);
         w22.init(sc, 400, 400);
         
       
-      //  w24.init(sc, 450, 250);
         w25.init(sc, 450, 350);
         w26.init(sc, 450, 400);
         
-       // w27.init(sc, 500, 250);
         //Border Walls
         wBorderHorTop.intiBorderHor(sc, 50, 100);//Top
         wBorderHorBot.intiBorderHor(sc, 550, 50);//Bottom
@@ -183,8 +177,8 @@ public class Flyer {
         
         //3High walls
         final Wall w3High = new Wall();
-         final Wall w3Hightop = new Wall();
-          final Wall w3Highbotm = new Wall();
+        final Wall w3Hightop = new Wall();
+        final Wall w3Highbotm = new Wall();
         w3High.inti3High(sc, 350, 150);
         w3Hightop.inti3High(sc, 205, 200);
         w3Highbotm.inti3High(sc, 405, 247);
