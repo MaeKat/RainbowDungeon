@@ -12,6 +12,7 @@ import basicgraphics.SpriteComponent;
 import basicgraphics.images.Picture;
 import java.awt.Dimension;
 import java.io.IOException;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 /**
@@ -20,6 +21,7 @@ import javax.swing.JOptionPane;
  */
 public class Falcon extends Sprite {
    int health;
+   double score;
     public Picture initialPic;
     /**
      * Initializes the sprite, setting its picture,
@@ -44,6 +46,13 @@ public class Falcon extends Sprite {
         sc.addSprite(this);
     }
 
+ public double getScore(){
+ return score;
+ }
+    public void setScore(int pointsGained){
+    score = score + pointsGained;
+ }
+    
    //Movement 
     public void moveY(double direction) {
         prevY(getY());//:?

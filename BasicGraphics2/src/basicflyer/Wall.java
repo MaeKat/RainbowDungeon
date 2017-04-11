@@ -107,6 +107,24 @@ public class Wall extends Sprite{
     }
     
     
+    public void inti3Long(SpriteComponent sc, int xVal, int yVal) throws IOException {
+        for (int i = 0; i < 8; i++) {
+             initialPic = new Picture("wall3Long.png");//creates a wall 3 nodes high
+        setPicture(initialPic);
+       // sc.setSize(10, 10);
+        Dimension d = sc.getSize();
+            for (int j = 0; j < 9; j++) {
+                
+        setX(yVal);
+        setY(xVal);
+        this.sc = sc;
+        sc.addSprite(this);
+       // drawMap(sc);
+       
+    }
+        }
+    }
+    
  SpriteComponent sc;
  
  
