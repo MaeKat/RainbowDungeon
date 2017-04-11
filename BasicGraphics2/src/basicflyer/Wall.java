@@ -106,47 +106,14 @@ public class Wall extends Sprite{
         }
     }
     
-    
-    public void inti3Long(SpriteComponent sc, int xVal, int yVal) throws IOException {
-        for (int i = 0; i < 8; i++) {
-             initialPic = new Picture("wall3Long.png");//creates a wall 3 nodes high
-        setPicture(initialPic);
-       // sc.setSize(10, 10);
-        Dimension d = sc.getSize();
-            for (int j = 0; j < 9; j++) {
-                
-        setX(yVal);
-        setY(xVal);
-        this.sc = sc;
-        sc.addSprite(this);
-       // drawMap(sc);
-       
-    }
-        }
-    }
-    
+
  SpriteComponent sc;
  
  
        
     @Override
        public void processEvent(SpriteCollisionEvent se) {
-            if (se.xlo) {
-            setX(0);
-        }
-        if (se.xhi) {
-            setX(0);
-        }
-        if (se.ylo) {
-            setY(0);
-        }
-        if (se.yhi) {
-            setY(0);
-        }
-         if(se.sprite2 != null) {
-        } else {
-            setActive(false);
-        }
+          
 
         if (se.eventType == CollisionEventType.SPRITE) {
             if (se.sprite2 instanceof Falcon) {//if hit move down one with barricade

@@ -91,6 +91,7 @@ public class Flyer {
         final Capitao cap1 = new Capitao();
         final Smoke smoke1 = new Smoke(); //lol 420 smoke1 
         final Smoke smoke2 = new Smoke();
+         final Key key = new Key();
         final Hero h = new Hero();
         final double INCR = 50;
         final int shots = 10;
@@ -160,10 +161,9 @@ public class Flyer {
         w3Hightop.inti3High(sc, 205, 200);
         w3Highbotm.inti3High(sc, 405, 247);
         
-        final Wall w3Longtop = new Wall();
-      //   w3Longtop.inti3Long(sc, shots, shots);
         f.init(sc);
     
+        key.init(sc, 205, 302);
         castle1.init(sc,450,350);
         castle2.init(sc,300,300);
         

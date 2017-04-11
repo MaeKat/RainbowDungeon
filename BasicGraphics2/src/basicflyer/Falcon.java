@@ -22,6 +22,7 @@ import javax.swing.JOptionPane;
 public class Falcon extends Sprite {
    int health;
    double score;
+   boolean key =false;
     public Picture initialPic;
     /**
      * Initializes the sprite, setting its picture,
@@ -44,6 +45,7 @@ public class Falcon extends Sprite {
         //setVelY(0);
         this.sc = sc;
         sc.addSprite(this);
+        
     }
 
  public double getScore(){
@@ -119,7 +121,10 @@ public class Falcon extends Sprite {
            setX(getPrevX());
            setY(getPrevY());
         }
-        
+        if(se.sprite2 instanceof Key){
+           se.sprite2.setActive(false);
+           key = true;
+        }
         
         }
         
