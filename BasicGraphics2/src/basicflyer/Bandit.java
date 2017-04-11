@@ -48,7 +48,7 @@ public class Bandit extends Enemy {
     
  @Override
   public void moveY(double direction) {
-//no move 
+    //no move 
     setY(300);
     }
   
@@ -64,12 +64,14 @@ public class Bandit extends Enemy {
   
            AudioClip clip = new ReusableClip("shock.wav");
            AudioClip clip2 = new ReusableClip("die.wav");
-        if (se.eventType == CollisionEventType.SPRITE) {
-            if (se.sprite2 instanceof Falcon) {//if hit move down one with barricade
-               se.sprite2.setX( se.sprite2.getX());
-              se.sprite2.setY( se.sprite2.getY());
+     if (se.eventType == CollisionEventType.SPRITE) {
+               if (se.sprite2 instanceof Falcon) {
+                 clip.play();
+                 
+                   se.sprite2.setX(se.sprite2.getPrevX());
+               se.sprite2.setY(se.sprite2.getPrevY());
               se.sprite2.loseHealth(20);//lose 20 health
-              clip.play();
+             
                 if (se.sprite2.getHealth()==0){
                 
                 se.sprite2.setActive(false);
@@ -86,6 +88,6 @@ public class Bandit extends Enemy {
             }
         }
     }
-
-
 }
+
+//}

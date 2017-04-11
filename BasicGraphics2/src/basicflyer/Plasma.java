@@ -20,7 +20,7 @@ import java.awt.Image;
  * @author sbrandt
  */
 class Plasma extends Sprite {
-    
+    int numOfShots = 10;
     /**
      * Creates a picture of a ball with the given color and size.
      * @param color
@@ -39,9 +39,11 @@ class Plasma extends Sprite {
      * Just sets the picture.
      * @param sc 
      */
-    public void init(SpriteComponent sc) {
+    public void init(SpriteComponent sc) { 
         setPicture(makeBall(Color.yellow,10));
+
     }
+    
     
     /**
      * Disappears if it comes in contact with the display

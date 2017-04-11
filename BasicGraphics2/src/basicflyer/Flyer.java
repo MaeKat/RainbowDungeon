@@ -37,18 +37,17 @@ public class Flyer {
             public void run() {//does nothing but make you feel stupid
             }
         });
-
+     
         final SpriteComponent sc = new SpriteComponent() {
             @Override
             public void paintBackground(Graphics g) {
                 Dimension d = getSize();
                 g.setColor(Color.DARK_GRAY);
                 g.fillRect(100,100, 450, 450);
-               // g.fillRect(0, 0, 550, 550);
                 g.setColor(Color.CYAN);//temp menu
                 g.fillRect(50, 0, 550, 50);
 
-               // g.setColor(Color.black);
+       
 
             }
         };
@@ -91,8 +90,10 @@ public class Flyer {
         final Capitao cap1 = new Capitao();
         final Smoke smoke1 = new Smoke(); //lol 420 smoke1 
         final Smoke smoke2 = new Smoke();
+        final Plasma pl = new Plasma();
         final Hero h = new Hero();
         final double INCR = 50;
+        final int shots = 10;
         bf.addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent ke) {
@@ -103,22 +104,28 @@ public class Flyer {
                     f.moveX(-INCR);
                 } else if (ke.getKeyCode() == KeyEvent.VK_UP) {//Moves up a space
                     f.moveY(-INCR);
-                    ;
+                    
                 } else if (ke.getKeyCode() == KeyEvent.VK_DOWN) {//moves down a space
                     f.moveY(INCR);
 
                 } else if (ke.getKeyChar() == ' ') {
-                    Plasma pl = new Plasma();
-
+                   
+                   // Plasma pl = new Plasma();
+                    if(pl.numOfShots != 0){
                     pl.setVelY(-10);
                     pl.setX(f.getX() + f.getWidth() * .5);
                     pl.setY(f.getY() + f.getHeight() * .5);
                     pl.init(sc);
                     sc.addSprite(pl);
+                    pl.numOfShots--;
+                   }
+                    else{
+                    pl.setActive(false);
+                    }
                 }
             }
         });
-        Random rand = new Random();
+   
 
      
         w3.init(sc, 100, 300);//Stairs
@@ -167,7 +174,7 @@ public class Flyer {
         
         smoke1.init(sc,100,300);
         
-        cap1.init(sc,152,502);
+        cap1.init(sc,153,500);
 
         h.init(sc,455,305);
 

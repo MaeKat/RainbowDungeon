@@ -82,7 +82,6 @@ public class Falcon extends Sprite {
                 setHealth(getHealth()- hitPoints);
             }
     
-    
     SpriteComponent sc;
     /**
      * Here we update the velocity and picture
@@ -102,18 +101,7 @@ public class Falcon extends Sprite {
     public void processEvent(SpriteCollisionEvent se) {
         if (se.eventType == CollisionEventType.WALL) {
         
-          if (se.xlo) {
-                          setVelX(Math.abs(getVelX()));
-                      }
-                      if (se.xhi) {
-                          setVelX(-Math.abs(getVelX()));
-                      }
-                      if (se.ylo) {
-                          setVelY(Math.abs(getVelY()));
-                      }
-                      if (se.yhi) {
-                          setVelY(-Math.abs(getVelY()));
-                      }
+          
         if(se.eventType==CollisionEventType.SPRITE){
         if(se.sprite2 instanceof Hero){
             se.sprite2.setActive(false);
@@ -125,7 +113,10 @@ public class Falcon extends Sprite {
         
         
         }
+        
+        
+        }
           
     }
     
-}}
+}
