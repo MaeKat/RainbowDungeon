@@ -90,7 +90,6 @@ public class Flyer {
         final Capitao cap1 = new Capitao();
         final Smoke smoke1 = new Smoke(); //lol 420 smoke1 
         final Smoke smoke2 = new Smoke();
-        final Plasma pl = new Plasma();
         final Hero h = new Hero();
         final double INCR = 50;
         final int shots = 10;
@@ -110,18 +109,15 @@ public class Flyer {
 
                 } else if (ke.getKeyChar() == ' ') {
                    
-                   // Plasma pl = new Plasma();
-                    if(pl.numOfShots != 0){
+                    Plasma pl = new Plasma();
+                   
                     pl.setVelY(-10);
                     pl.setX(f.getX() + f.getWidth() * .5);
                     pl.setY(f.getY() + f.getHeight() * .5);
                     pl.init(sc);
                     sc.addSprite(pl);
-                    pl.numOfShots--;
-                   }
-                    else{
-                    pl.setActive(false);
-                    }
+                    
+                   
                 }
             }
         });

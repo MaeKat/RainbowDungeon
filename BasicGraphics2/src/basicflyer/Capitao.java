@@ -30,7 +30,7 @@ public class Capitao extends Enemy{
      * @throws IOException 
      */
     public void init(SpriteComponent sc, int xVal, int yVal) throws IOException {
-        initialPic = new Picture("cap-fire.png");//creates a castle enemy
+        initialPic = new Picture("cap-fire2.png");//creates a enemy
         setPicture(initialPic);
         Dimension d = sc.getSize();
        
