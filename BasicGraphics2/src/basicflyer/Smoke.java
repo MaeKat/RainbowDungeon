@@ -19,21 +19,22 @@ import java.io.IOException;
  * @author Mousefire
  */
 public class Smoke extends Enemy {
-       public Picture initialPic;
+
+    public Picture initialPic;
+
     /**
-     * Initializes the sprite, setting its picture,
-     * position, and speed. It also adds it to the
-     * SpriteComponent.
-     * 
+     * Initializes the sprite, setting its picture, position, and speed. It also
+     * adds it to the SpriteComponent.
+     *
      * @param sc
-     * @throws IOException 
+     * @throws IOException
      */
     public void init(SpriteComponent sc, int xVal, int yVal) throws IOException {
         initialPic = new Picture("smoke-gas.gif");//creates a castle enemy
         setPicture(initialPic);
-       // sc.setSize(10, 10);
+        // sc.setSize(10, 10);
         Dimension d = sc.getSize();
-       
+
         setX(xVal);
         setY(yVal);
         //setVelX(1);
@@ -41,47 +42,45 @@ public class Smoke extends Enemy {
         this.sc = sc;
         sc.addSprite(this);
     }
- SpriteComponent sc;
- 
- //if going past barrier
- static int enemyCount =2;
-    
- @Override
-  public void moveY(double direction) {
-       
-    }
-  
+    SpriteComponent sc;
+
+    //if going past barrier
+    static int enemyCount = 2;
+
     @Override
-    public void moveX(double direction){
-        
+    public void moveY(double direction) {
+
     }
- 
+
+    @Override
+    public void moveX(double direction) {
+
+    }
+
     AudioClip clip = new ReusableClip("cough.wav");
+
     @Override
-       public void processEvent(SpriteCollisionEvent se) {
-           
-           
-         if(se.sprite2 != null) {
+    public void processEvent(SpriteCollisionEvent se) {
+
+        if (se.sprite2 != null) {
         } else {
             setActive(false);
         }
 
         if (se.eventType == CollisionEventType.SPRITE) {
             if (se.sprite2 instanceof Falcon) {//if hit move down one with barricade
-              se.sprite2.setX( se.sprite2.getX());
-              se.sprite2.setY( se.sprite2.getY());  
-              se.sprite2.loseHealth(40);
-              setActive(false);
-              clip.play();
-              System.out.println("S"+ se.sprite2.getHealth());
+                se.sprite2.setX(se.sprite2.getX());
+                se.sprite2.setY(se.sprite2.getY());
+                se.sprite2.loseHealth(40);
+                setActive(false);
+                clip.play();
+                System.out.println("S" + se.sprite2.getHealth());
             }
             if (se.sprite2 instanceof Plasma) {
-                
+
                 se.sprite2.setActive(false);
- 
+
             }
         }
     }
-
-
 }

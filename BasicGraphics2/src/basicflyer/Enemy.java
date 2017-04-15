@@ -113,7 +113,4 @@ AudioClip clip = new ReusableClip("die.wav");//sound when u die
             }
         }
     }
-
-
-
 }

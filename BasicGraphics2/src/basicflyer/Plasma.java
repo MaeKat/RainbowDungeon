@@ -20,40 +20,42 @@ import java.awt.Image;
  * @author sbrandt
  */
 class Plasma extends Sprite {
+
     int numOfShots = 10;
+
     /**
      * Creates a picture of a ball with the given color and size.
+     *
      * @param color
      * @param size
-     * @return 
+     * @return
      */
-    public static Picture makeBall(Color color,int size) {
+    public static Picture makeBall(Color color, int size) {
         Image im = BasicFrame.createImage(size, size);
         Graphics g = im.getGraphics();
         g.setColor(color);
         g.fillOval(0, 0, size, size);
         return new Picture(im);
     }
-    
+
     /**
      * Just sets the picture.
-     * @param sc 
+     *
+     * @param sc
      */
-    public void init(SpriteComponent sc) { 
-        setPicture(makeBall(Color.yellow,10));
+    public void init(SpriteComponent sc) {
+        setPicture(makeBall(Color.yellow, 10));
 
     }
-    
-    
+
     /**
-     * Disappears if it comes in contact with the display
-     * boundary.
-     * @param se 
+     * Disappears if it comes in contact with the display boundary.
+     *
+     * @param se
      */
-   
     @Override
     public void processEvent(SpriteCollisionEvent se) {
-        if(se.sprite2 != null) {
+        if (se.sprite2 != null) {
         } else {
             setActive(false);
         }
@@ -62,13 +64,16 @@ class Plasma extends Sprite {
                 setActive(false);
             }
             if (se.sprite2 instanceof Bandit) {
-               {
-                setActive(false);    
+                {
+                    setActive(false);
+                }
+                if (se.sprite2 instanceof Wall) {
+                    {
+                        setActive(false);
+                    }
+                }
+
             }
-        if (se.sprite2 instanceof Wall) {
-               {
-                setActive(false);    
-            }
-   }
-    
-}}}}
+        }
+    }
+}

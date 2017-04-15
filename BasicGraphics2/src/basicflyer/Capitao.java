@@ -46,15 +46,11 @@ public class Capitao extends Enemy{
  static int enemyCount =2;
     
  @Override
-  public void moveY(double direction) {
-       
+  public void moveY(double direction) {     
     }
-  
     @Override
-    public void moveX(double direction){
-        
+    public void moveX(double direction){ 
     }
- 
      AudioClip clip = new ReusableClip("cough.wav");
     @Override
        public void processEvent(SpriteCollisionEvent se) {
@@ -84,8 +80,3 @@ public class Capitao extends Enemy{
             }
         }
     }
-
-
-    
-    
-

@@ -15,9 +15,7 @@ import java.io.IOException;
  *
  * @author Mousefire
  */
-public class Key extends Sprite {
-    
-       
+public class Key extends Sprite {   
         public Picture initialPic;
     /**
      * Initializes the sprite, setting its picture,
@@ -31,7 +29,6 @@ public class Key extends Sprite {
         for (int i = 0; i < 8; i++) {
              initialPic = new Picture("key2.png");//creates a wall 
         setPicture(initialPic);
-       // sc.setSize(10, 10);
         Dimension d = sc.getSize();
             for (int j = 0; j < 9; j++) {
                 
@@ -39,11 +36,9 @@ public class Key extends Sprite {
         setY(xVal);
         this.sc = sc;
         sc.addSprite(this);
-       // drawMap(sc);
        
     }
         }
     }
-    SpriteComponent sc;
-    
+    SpriteComponent sc;  
 }

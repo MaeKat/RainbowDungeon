@@ -88,9 +88,5 @@ public class Castle extends Enemy {
                 }
             }
         }
-    }
-
-
-    
-    
+    }  
 }
