@@ -110,19 +110,19 @@ public class Falcon extends Sprite {
      */
     @Override
     public void processEvent(SpriteCollisionEvent se) {
-        if (se.eventType == CollisionEventType.WALL) {
+       // if (se.eventType == CollisionEventType.WALL) {
         
           
-        if(se.eventType==CollisionEventType.SPRITE){
-        if(se.sprite2 instanceof Hero){
-            se.sprite2.setActive(false);
-        }
-        if(se.sprite2 instanceof Wall){
-           setX(getPrevX());
-           setY(getPrevY());
-        }
+       // if(se.eventType==CollisionEventType.SPRITE){
+       // if(se.sprite2 instanceof Hero){
+      //      se.sprite2.setActive(false);
+     //   }
+     //   if(se.sprite2 instanceof Wall){
+     //      setX(getPrevX());
+     //      setY(getPrevY());
+    //    }
         if(se.sprite2 instanceof Key){
-           setActive(false);
+           se.sprite2.setActive(false);
            key = true;
         }
         if(se.sprite2 instanceof Door){
@@ -131,10 +131,10 @@ public class Falcon extends Sprite {
                 System.exit(0);
             }
         }
-        }
+      //  }
  
         }
           
-    }
+    //}
     
 }
