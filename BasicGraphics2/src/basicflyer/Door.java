@@ -5,7 +5,9 @@
  */
 package basicflyer;
 
+import basicgraphics.CollisionEventType;
 import basicgraphics.Sprite;
+import basicgraphics.SpriteCollisionEvent;
 import basicgraphics.SpriteComponent;
 import basicgraphics.images.Picture;
 import java.awt.Dimension;
@@ -16,7 +18,6 @@ import java.io.IOException;
  * @author Mousefire
  */
 public class Door extends Sprite {
-    
        
         public Picture initialPic;
     /**

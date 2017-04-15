@@ -127,7 +127,6 @@ public class Wall extends Sprite{
             }
         }
     
-       //have to add each wall individually
 
 }
 

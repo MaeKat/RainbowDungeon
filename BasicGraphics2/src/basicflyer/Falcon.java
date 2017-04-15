@@ -122,13 +122,17 @@ public class Falcon extends Sprite {
            setY(getPrevY());
         }
         if(se.sprite2 instanceof Key){
-           se.sprite2.setActive(false);
+           setActive(false);
            key = true;
         }
-        
+        if(se.sprite2 instanceof Door){
+            if(key){
+                JOptionPane.showMessageDialog(sc, "Congrats! You're smarter than a 5th Grader!");
+                System.exit(0);
+            }
         }
-        
-        
+        }
+ 
         }
           
     }

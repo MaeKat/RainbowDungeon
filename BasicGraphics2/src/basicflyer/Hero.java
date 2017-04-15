@@ -44,9 +44,6 @@ public class Hero extends Sprite {
         this.sc = sc;
         sc.addSprite(this);
     }
-
- 
-    
     /*  
     adds one to the number of heros in play at any time should be only 1-3 pergame
      */
@@ -70,22 +67,11 @@ public class Hero extends Sprite {
         super.setActive(b);
     }
 
-    //moves up and down
-     
-
-    //moves left and right
-     
-
-    /*
-     Flyer gets health if hit, disapears at end of screen 
-    */
  @Override
     public void processEvent(SpriteCollisionEvent se) {
         if (se.eventType == CollisionEventType.WALL) {
-        
                 setActive(false);      
         }
-        
         Falcon f = new Falcon();
         if (se.eventType == CollisionEventType.SPRITE) {
             if (se.sprite2 instanceof Falcon) {
@@ -96,10 +82,7 @@ public class Hero extends Sprite {
                     f.gainHealth(20);//else add only 20HP   
                     setActive(false);}
             }
-            
-            
+ 
         }  
-    
-    
-    
+
 }}

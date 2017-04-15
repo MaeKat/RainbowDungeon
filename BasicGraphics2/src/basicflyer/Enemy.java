@@ -11,7 +11,6 @@ import basicgraphics.SpriteCollisionEvent;
 import basicgraphics.SpriteComponent;
 import basicgraphics.images.Picture;
 import basicgraphics.sounds.ReusableClip;
-//import basicshooter.Bullet;
 import java.applet.AudioClip;
 import java.awt.Dimension;
 import java.io.IOException;
@@ -32,13 +31,7 @@ public class Enemy extends Sprite{
      * 
      * @param sc
      * @throws IOException 
-     */
-
-    
-        
-       
-        
-       
+     */    
  //creates a random enemy
     public void init(SpriteComponent sc) throws IOException {
       initialPic = new Picture(enemyCreator());//creates enemy
@@ -68,8 +61,6 @@ enemy = enemies.get(num);
     return enemy;//returns which enemy spawns
     
  }
- 
- 
  //if going past barrier
  static int enemyCount;
     
@@ -95,8 +86,7 @@ enemy = enemies.get(num);
     public void moveX(double direction){
         setX(getX()+direction);
     }
-    
-    
+       
 AudioClip clip = new ReusableClip("die.wav");//sound when u die
  @Override
     public void processEvent(SpriteCollisionEvent se) {
