@@ -94,7 +94,7 @@ public class Flyer {
          final Key key = new Key();
         final Hero h = new Hero();
         final double INCR = 50;
-        final int shots = 10;
+        final Door door = new Door();
         bf.addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent ke) {
@@ -164,6 +164,7 @@ public class Flyer {
         f.init(sc);
     
         key.init(sc, 205, 302);
+        door.init(sc,150,350);
         castle1.init(sc,450,350);
         castle2.init(sc,300,300);
         

@@ -5,8 +5,8 @@
  */
 package basicflyer;
 
-import basicgraphics.SpriteComponent;
 import basicgraphics.Sprite;
+import basicgraphics.SpriteComponent;
 import basicgraphics.images.Picture;
 import java.awt.Dimension;
 import java.io.IOException;
@@ -15,7 +15,7 @@ import java.io.IOException;
  *
  * @author Mousefire
  */
-public class Key extends Sprite {
+public class Door extends Sprite {
     
        
         public Picture initialPic;
@@ -29,7 +29,7 @@ public class Key extends Sprite {
      */
     public void init(SpriteComponent sc, int xVal, int yVal) throws IOException {
         for (int i = 0; i < 8; i++) {
-             initialPic = new Picture("key2.png");//creates a wall 
+             initialPic = new Picture("door.png");//creates a wall 
         setPicture(initialPic);
        // sc.setSize(10, 10);
         Dimension d = sc.getSize();

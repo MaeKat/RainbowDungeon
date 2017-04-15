@@ -71,6 +71,7 @@ public class Smoke extends Enemy {
               se.sprite2.setX( se.sprite2.getX());
               se.sprite2.setY( se.sprite2.getY());  
               se.sprite2.loseHealth(40);
+              setActive(false);
               clip.play();
               System.out.println("S"+ se.sprite2.getHealth());
             }

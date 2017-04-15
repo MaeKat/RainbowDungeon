@@ -67,11 +67,14 @@ public class Capitao extends Enemy{
 
         if (se.eventType == CollisionEventType.SPRITE) {
             if (se.sprite2 instanceof Falcon) {//if hit move down one with barricade
-             se.sprite2.setX( se.sprite2.getX());
+             if(se.sprite2.getHealth() > 0)
+                se.sprite2.setX( se.sprite2.getX());
               se.sprite2.setY( se.sprite2.getY());    
               se.sprite2.loseHealth(30);//cough
               clip.play();
+              setActive(false);
               System.out.println( "C"+se.sprite2.getHealth());
+              
             }
             if (se.sprite2 instanceof Plasma) {
               
