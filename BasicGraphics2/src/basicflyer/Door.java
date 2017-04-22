@@ -5,9 +5,7 @@
  */
 package basicflyer;
 
-import basicgraphics.CollisionEventType;
 import basicgraphics.Sprite;
-import basicgraphics.SpriteCollisionEvent;
 import basicgraphics.SpriteComponent;
 import basicgraphics.images.Picture;
 import java.awt.Dimension;
@@ -32,7 +30,6 @@ public class Door extends Sprite {
         for (int i = 0; i < 8; i++) {
              initialPic = new Picture("door.png");//creates a wall 
         setPicture(initialPic);
-       // sc.setSize(10, 10);
         Dimension d = sc.getSize();
             for (int j = 0; j < 9; j++) {
                 
@@ -40,7 +37,6 @@ public class Door extends Sprite {
         setY(xVal);
         this.sc = sc;
         sc.addSprite(this);
-       // drawMap(sc);
        
     }
         }
