@@ -3,21 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Mousefire/Downloads/BasicGraphics-80694e9690928db0a5dba916dadb27e247edac7b/BasicGraphics2/src/basicflyer/Plasma.java</file>
-            <file>file:/C:/Users/Mousefire/Downloads/BasicGraphics-80694e9690928db0a5dba916dadb27e247edac7b/BasicGraphics2/src/basicgraphics/MouseWrapper.java</file>
-            <file>file:/C:/Users/Mousefire/Downloads/BasicGraphics-80694e9690928db0a5dba916dadb27e247edac7b/BasicGraphics2/src/basicgraphics/GuiException.java</file>
-            <file>file:/C:/Users/Mousefire/Downloads/BasicGraphics-80694e9690928db0a5dba916dadb27e247edac7b/BasicGraphics2/src/basicflyer/Flyer.java</file>
-            <file>file:/C:/Users/Mousefire/Downloads/BasicGraphics-80694e9690928db0a5dba916dadb27e247edac7b/BasicGraphics2/src/basicflyer/Key.java</file>
-            <file>file:/C:/Users/Mousefire/Downloads/BasicGraphics-80694e9690928db0a5dba916dadb27e247edac7b/BasicGraphics2/src/basicgraphics/Sprite.java</file>
-            <file>file:/C:/Users/Mousefire/Downloads/BasicGraphics-80694e9690928db0a5dba916dadb27e247edac7b/BasicGraphics2/src/basicflyer/Capitao.java</file>
-            <file>file:/C:/Users/Mousefire/Downloads/BasicGraphics-80694e9690928db0a5dba916dadb27e247edac7b/BasicGraphics2/src/basicgraphics/SpriteComponent.java</file>
-            <file>file:/C:/Users/Mousefire/Downloads/BasicGraphics-80694e9690928db0a5dba916dadb27e247edac7b/BasicGraphics2/src/basicflyer/Wall.java</file>
-            <file>file:/C:/Users/Mousefire/Downloads/BasicGraphics-80694e9690928db0a5dba916dadb27e247edac7b/BasicGraphics2/src/basicflyer/Bandit.java</file>
             <file>file:/C:/Users/Mousefire/Downloads/BasicGraphics-80694e9690928db0a5dba916dadb27e247edac7b/BasicGraphics2/src/basicflyer/Falcon.java</file>
-            <file>file:/C:/Users/Mousefire/Downloads/BasicGraphics-80694e9690928db0a5dba916dadb27e247edac7b/BasicGraphics2/src/basicflyer/Castle.java</file>
-            <file>file:/C:/Users/Mousefire/Downloads/BasicGraphics-80694e9690928db0a5dba916dadb27e247edac7b/BasicGraphics2/src/basicgraphics/TaskRunner.java</file>
-            <file>file:/C:/Users/Mousefire/Downloads/BasicGraphics-80694e9690928db0a5dba916dadb27e247edac7b/BasicGraphics2/src/basicgraphics/ErrorComponent.java</file>
-            <file>file:/C:/Users/Mousefire/Downloads/BasicGraphics-80694e9690928db0a5dba916dadb27e247edac7b/BasicGraphics2/src/basicflyer/Smoke.java</file>
+            <file>file:/C:/Users/Mousefire/Downloads/BasicGraphics-80694e9690928db0a5dba916dadb27e247edac7b/BasicGraphics2/src/basicflyer/Flyer.java</file>
+            <file>file:/C:/Users/Mousefire/Downloads/BasicGraphics-80694e9690928db0a5dba916dadb27e247edac7b/BasicGraphics2/src/basicflyer/Wall.java</file>
         </group>
     </open-files>
 </project-private>

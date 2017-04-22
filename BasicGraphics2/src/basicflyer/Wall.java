@@ -23,7 +23,7 @@ public class Wall extends Sprite {
 
     /**
      * Initializes the sprite, setting its picture, position, and speed. It also
-     * adds it to the SpriteComponent.
+     * adds it to the SpriteComponent. for the normal single block of a wall
      *
      * @param sc
      * @throws IOException
@@ -48,7 +48,7 @@ public class Wall extends Sprite {
 
     /**
      * Initializes the sprite, setting its picture, position, and speed. It also
-     * adds it to the SpriteComponent.
+     * adds it to the SpriteComponent. For the horizontal border wall sprite
      *
      * @param sc
      * @throws IOException
@@ -71,6 +71,13 @@ public class Wall extends Sprite {
         }
     }
 
+    /**
+     *
+     * @param sc
+     * @param xVal
+     * @param yVal
+     * @throws IOException
+     */
     public void intiBorderVert(SpriteComponent sc, int xVal, int yVal) throws IOException {
         for (int i = 0; i < 8; i++) {
             initialPic = new Picture("wall border rotate.png");//creates a wall 

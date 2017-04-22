@@ -13,8 +13,7 @@ import java.awt.Graphics;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.io.IOException;
-import java.util.Random;
-import javax.swing.JLabel;
+
 
 /**
  * This program creates a map for a hostage to escape. The hostage also shoots of
@@ -23,8 +22,6 @@ import javax.swing.JLabel;
  * @author vhoffm2 + sbrandt
  */
 public class Flyer {
-
-
 
     public static void main(String[] args) throws IOException {
         BasicFrame bf = new BasicFrame("Flyer");
@@ -48,10 +45,7 @@ public class Flyer {
 
             }
         };
-        
-        
-        
-        
+  
         sc.setPreferredSize(new Dimension(800, 800));
         bf.add("Flyer", sc, 0, 0, 0, 0);
         bf.show();
@@ -90,7 +84,6 @@ public class Flyer {
         final Bandit bandit4 = new Bandit();
         final Capitao cap1 = new Capitao();
         final Smoke smoke1 = new Smoke(); //lol 420 smoke1 
-        final Smoke smoke2 = new Smoke();
          final Key key = new Key();
         final Hero h = new Hero();
         final double INCR = 50;

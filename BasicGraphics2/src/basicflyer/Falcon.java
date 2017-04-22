@@ -5,19 +5,19 @@
  */
 package basicflyer;
 
-import basicgraphics.CollisionEventType;
 import basicgraphics.Sprite;
 import basicgraphics.SpriteCollisionEvent;
 import basicgraphics.SpriteComponent;
 import basicgraphics.images.Picture;
 import java.awt.Dimension;
 import java.io.IOException;
-import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 /**
- *
- * @author sbrandt
+ * This class contains the info for controls and
+ * implementaion of the Hostage 
+ * trying to escape
+ * @author vhoffm2
  */
 public class Falcon extends Sprite {
    int health;
@@ -46,40 +46,77 @@ public class Falcon extends Sprite {
         
     }
 
- public double getScore(){
- return score;
- }
+    /**
+     *Gets the score
+     * @return score
+     */
+    public double getScore(){
+    return score;
+    }
+
+    /**
+     * Sets the score
+     * @param pointsGained
+     */
     public void setScore(int pointsGained){
     score = score + pointsGained;
  }
     
-   //Movement 
+
+    /**
+     *  Causes the hostage to move from one square to 
+     * another with each button press up or down only
+     * @param direction
+     */
     public void moveY(double direction) {
         prevY(getY());//:?
          prevX(getX());//:?
         setY(getY()+direction);   
     }
+
+    /**
+     * Causes the hostage to move left and right
+     * @param direction
+     */
     public void moveX(double direction){
         prevX(getX());//:?
         prevY(getY());//:?
         setX(getX()+direction); 
     }
     
-   //Health
+    /**
+     *  Initializes the health for the Hostage
+     * @param totalHealth
+     */
     @Override
      public void setHealth(int totalHealth){
      health = totalHealth;
     }
+
+    /**
+     *  Gets the health of the hostage
+     * @return
+     */
     @Override
     public int getHealth(){//gain health
     return health;
     }
+
+    /**
+     *  Allows the Hostage to gain health
+     * @param hitPoints
+     */
     @Override
     public void gainHealth(int hitPoints){
-        setHealth(getHealth()+hitPoints);
+        setHealth(getHealth()+ hitPoints);
     
     }
-  //lose health function
+
+    /**
+     * when the hostage takes damage the points are deducted and kills
+     * the hostage if he loses too much health
+     * @param hitPoints
+     */
     @Override
             public void loseHealth(int hitPoints ){
                 if (hitPoints > getHealth())
@@ -101,9 +138,8 @@ public class Falcon extends Sprite {
         
     }
     /**
-     * This sprite only reacts to collisions with the
-     * borders of the display region. When it does, it
-     * wraps to the other side.
+     * This sprite only reacts to collisions 
+     * with important interaction
      * @param se 
      */
     @Override
