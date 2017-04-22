@@ -20,13 +20,22 @@ import java.io.IOException;
  */
 public class Capitao extends Enemy{
     
-       public Picture initialPic;
+    /**
+     * image for cap
+     */
+    public Picture initialPic;
+
+    public Capitao() {
+        this.clip = new ReusableClip("cough.wav");
+    }
     /**
      * Initializes the sprite, setting its picture,
      * position, and speed. It also adds it to the
      * SpriteComponent.
      * 
      * @param sc
+     * @param xVal
+     * @param yVal
      * @throws IOException 
      */
     public void init(SpriteComponent sc, int xVal, int yVal) throws IOException {
@@ -45,13 +54,23 @@ public class Capitao extends Enemy{
  //if going past barrier
  static int enemyCount =2;
     
- @Override
+    /**
+     * static pos
+     * @param direction
+     */
+    @Override
   public void moveY(double direction) {     
     }
+
+    /**
+     * static pos
+     * @param direction
+     */
     @Override
     public void moveX(double direction){ 
     }
-     AudioClip clip = new ReusableClip("cough.wav");
+    
+     AudioClip clip;
     @Override
        public void processEvent(SpriteCollisionEvent se) {
             
