@@ -84,7 +84,7 @@ public class Flyer {
         final Bandit bandit4 = new Bandit();
         final Capitao cap1 = new Capitao();
         final Smoke smoke1 = new Smoke(); //lol 420 smoke1 
-         final Key key = new Key();
+        final Key key = new Key();
         final Hero h = new Hero();
         final double INCR = 50;
         final Door door = new Door();

@@ -18,7 +18,7 @@ import java.io.IOException;
 
 /**
  *
- * @author Mousefire
+ * @author vhoffm2
  */
 public class Hero extends Sprite {
 
@@ -54,6 +54,10 @@ public class Hero extends Sprite {
         heroCount++;
     }
 
+    /**
+     * sets hero to active
+     * @param b
+     */
     @Override
     public void setActive(boolean b) {
         if (isActive() == b) {

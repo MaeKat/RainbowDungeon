@@ -41,13 +41,16 @@ public class Enemy extends Sprite{
        
         setX(d.width/3);
         setY(d.height/3);
-        //setVelX(1);
-        //setVelY(0);
+
         this.sc = sc;
         sc.addSprite(this);        
     }
  SpriteComponent sc;
- //creates a random enemy
+
+    /**
+     * creates a random enemy
+     * @return enemy
+     */
  public String enemyCreator(){
  ArrayList<String> enemies = new ArrayList<>();
  enemies.add("castle-barricade.png");//castle
@@ -65,9 +68,14 @@ enemy = enemies.get(num);
  static int enemyCount;
     
     Enemy() {
+        this.clip = new ReusableClip("die.wav");
         enemyCount++;
     }
     
+    /**
+     * activates enemies and keeps count of enemies
+     * @param b
+     */
     @Override
     public void setActive(boolean b) {
         if(isActive() == b)
@@ -78,16 +86,24 @@ enemy = enemies.get(num);
             enemyCount--;
         super.setActive(b);
     }
- //move up and down
+
+    /**
+     * moves in the Y direction
+     * @param direction
+     */
      public void moveY(double direction) {
         setY(getY()+direction);    
     }
-     //move left and right
+
+    /**
+     * moves in the X direction
+     * @param direction
+     */
     public void moveX(double direction){
         setX(getX()+direction);
     }
        
-AudioClip clip = new ReusableClip("die.wav");//sound when u die
+AudioClip clip;
  @Override
     public void processEvent(SpriteCollisionEvent se) {
          if(se.sprite2 != null) {
