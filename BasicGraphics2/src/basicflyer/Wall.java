@@ -26,13 +26,14 @@ public class Wall extends Sprite {
      * adds it to the SpriteComponent. for the normal single block of a wall
      *
      * @param sc
+     * @param xVal
+     * @param yVal
      * @throws IOException
      */
     public void init(SpriteComponent sc, int xVal, int yVal) throws IOException {
         for (int i = 0; i < 8; i++) {
             initialPic = new Picture("walls.png");//creates a wall 
             setPicture(initialPic);
-            // sc.setSize(10, 10);
             Dimension d = sc.getSize();
             for (int j = 0; j < 9; j++) {
 
@@ -40,7 +41,6 @@ public class Wall extends Sprite {
                 setY(xVal);
                 this.sc = sc;
                 sc.addSprite(this);
-                // drawMap(sc);
 
             }
         }
@@ -51,13 +51,14 @@ public class Wall extends Sprite {
      * adds it to the SpriteComponent. For the horizontal border wall sprite
      *
      * @param sc
+     * @param xVal
+     * @param yVal
      * @throws IOException
      */
     public void intiBorderHor(SpriteComponent sc, int xVal, int yVal) throws IOException {
         for (int i = 0; i < 8; i++) {
             initialPic = new Picture("wall border.png");//creates a wall 
             setPicture(initialPic);
-            // sc.setSize(10, 10);
             Dimension d = sc.getSize();
             for (int j = 0; j < 9; j++) {
 
@@ -65,14 +66,13 @@ public class Wall extends Sprite {
                 setY(xVal);
                 this.sc = sc;
                 sc.addSprite(this);
-                // drawMap(sc);
 
             }
         }
     }
 
     /**
-     *
+     * for vertical border.
      * @param sc
      * @param xVal
      * @param yVal
@@ -82,7 +82,6 @@ public class Wall extends Sprite {
         for (int i = 0; i < 8; i++) {
             initialPic = new Picture("wall border rotate.png");//creates a wall 
             setPicture(initialPic);
-            // sc.setSize(10, 10);
             Dimension d = sc.getSize();
             for (int j = 0; j < 9; j++) {
 
@@ -90,7 +89,6 @@ public class Wall extends Sprite {
                 setY(xVal);
                 this.sc = sc;
                 sc.addSprite(this);
-                // drawMap(sc);
 
             }
         }
@@ -100,7 +98,6 @@ public class Wall extends Sprite {
         for (int i = 0; i < 8; i++) {
             initialPic = new Picture("wall3High.png");//creates a wall 3 nodes high
             setPicture(initialPic);
-            // sc.setSize(10, 10);
             Dimension d = sc.getSize();
             for (int j = 0; j < 9; j++) {
 
@@ -108,14 +105,16 @@ public class Wall extends Sprite {
                 setY(xVal);
                 this.sc = sc;
                 sc.addSprite(this);
-                // drawMap(sc);
 
             }
         }
     }
 
     SpriteComponent sc;
-
+    /**
+     * impact reactions for walls
+     * @param  se
+     */
     @Override
     public void processEvent(SpriteCollisionEvent se) {
 

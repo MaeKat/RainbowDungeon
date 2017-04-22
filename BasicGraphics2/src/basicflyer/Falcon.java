@@ -139,7 +139,7 @@ public class Falcon extends Sprite {
     }
     /**
      * This sprite only reacts to collisions 
-     * with important interaction
+     * with important interaction for hostage
      * @param se 
      */
     @Override

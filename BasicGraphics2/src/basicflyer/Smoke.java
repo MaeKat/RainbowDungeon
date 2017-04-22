@@ -22,6 +22,10 @@ public class Smoke extends Enemy {
 
     public Picture initialPic;
 
+    public Smoke() {
+        this.clip = new ReusableClip("cough.wav");
+    }
+
     /**
      * Initializes the sprite, setting its picture, position, and speed. It also
      * adds it to the SpriteComponent.
@@ -46,19 +50,30 @@ public class Smoke extends Enemy {
 
     //if going past barrier
     static int enemyCount = 2;
-
+    /**
+     *static pos
+     *
+     */
     @Override
     public void moveY(double direction) {
 
     }
 
+     /**
+     *static pos
+     *
+     */
     @Override
     public void moveX(double direction) {
 
     }
 
-    AudioClip clip = new ReusableClip("cough.wav");
+    AudioClip clip;
 
+     /**
+     * impact reactions for smoke
+     * @param  se
+     */
     @Override
     public void processEvent(SpriteCollisionEvent se) {
 

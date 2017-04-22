@@ -70,7 +70,10 @@ public class Hero extends Sprite {
         }
         super.setActive(b);
     }
-
+/**
+     * impact reactions for the hero
+     * @param  se
+     */
  @Override
     public void processEvent(SpriteCollisionEvent se) {
         if (se.eventType == CollisionEventType.WALL) {

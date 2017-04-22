@@ -42,18 +42,28 @@ public class Castle extends Enemy {
  
  //if going past barrier
  static int enemyCount =2;
-    
+    /**
+     * static pos
+     * @param  direction
+     */
  @Override
   public void moveY(double direction) {
        //doesn't move
     }
-  
+  /**
+     * static pos
+     * @param  direction
+     */
     @Override
     public void moveX(double direction){
         //doesn't move
     }
  
     int counter=0;
+    /**
+     * impact reactions for castle
+     * @param  se
+     */
     @Override
        public void processEvent(SpriteCollisionEvent se) {
             if (se.xlo) {

@@ -73,7 +73,10 @@ public class Bandit extends Enemy {
     }
  
     int counter =0;
-    
+    /**
+     * impact reactions for bandit
+     * @param  se
+     */
     @Override
        public void processEvent(SpriteCollisionEvent se) {
   

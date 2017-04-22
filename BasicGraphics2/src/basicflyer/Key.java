@@ -23,6 +23,8 @@ public class Key extends Sprite {
      * SpriteComponent.
      * 
      * @param sc
+     * @param xVal
+     * @param yVal
      * @throws IOException 
      */
     public void init(SpriteComponent sc, int xVal, int yVal) throws IOException {

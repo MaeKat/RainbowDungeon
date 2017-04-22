@@ -50,7 +50,7 @@ class Plasma extends Sprite {
 
     /**
      * Disappears if it comes in contact with the display boundary.
-     *
+     * for plasma shots
      * @param se
      */
     @Override

@@ -71,6 +71,10 @@ public class Capitao extends Enemy{
     }
     
      AudioClip clip;
+     /**
+     * impact reactions for capitao
+     * @param  se
+     */
     @Override
        public void processEvent(SpriteCollisionEvent se) {
             
