@@ -19,13 +19,19 @@ import java.io.IOException;
  * @author Mousefire
  */
 public class Bandit extends Enemy {
-       public Picture initialPic;
+
+    /**
+     * var to hold the sprite
+     */
+    public Picture initialPic;
     /**
      * Initializes the sprite, setting its picture,
      * position, and speed. It also adds it to the
      * SpriteComponent.
      * 
      * @param sc
+     * @param xVal
+     * @param yVal
      * @throws IOException 
      */
     public void init(SpriteComponent sc, int xVal, int yVal) throws IOException {
@@ -42,16 +48,24 @@ public class Bandit extends Enemy {
         sc.addSprite(this);
     }
  SpriteComponent sc;
- 
- //if going past barrier
  static int enemyCount =2;
     
- @Override
+    /**
+     * keeps a static y for bandit
+     * has a def pos
+     * @param direction
+     */
+    @Override
   public void moveY(double direction) {
     //no move 
     setY(300);
     }
   
+    /**
+     * keeps a static x for bandit
+     * has a def pos
+     * @param direction
+     */
     @Override
     public void moveX(double direction){
         //no move
@@ -59,6 +73,7 @@ public class Bandit extends Enemy {
     }
  
     int counter =0;
+    
     @Override
        public void processEvent(SpriteCollisionEvent se) {
   
