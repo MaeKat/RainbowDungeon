@@ -16,7 +16,7 @@ import java.awt.Graphics;
 import java.awt.Image;
 
 /**
- *
+ * All the methods and usage needed for Plasma to display and interact
  * @author sbrandt
  */
 class Plasma extends Sprite {

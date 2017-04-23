@@ -15,7 +15,7 @@ import java.awt.Dimension;
 import java.io.IOException;
 
 /**
- *
+ * All the methods for Capitao
  * @author Mousefire
  */
 public class Capitao extends Enemy{

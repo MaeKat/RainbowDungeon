@@ -13,7 +13,7 @@ import java.awt.Dimension;
 import java.io.IOException;
 
 /**
- *
+ * All the methods and usage needed for Castle
  * @author Mousefire
  */
 public class Castle extends Enemy { 

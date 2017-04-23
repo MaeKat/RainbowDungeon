@@ -12,7 +12,7 @@ import java.awt.Dimension;
 import java.io.IOException;
 
 /**
- *
+ * All the methods and usage needed for Door
  * @author Mousefire
  */
 public class Door extends Sprite {

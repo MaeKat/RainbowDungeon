@@ -12,7 +12,7 @@ import java.awt.Dimension;
 import java.io.IOException;
 
 /**
- *
+ * All the methods and usage needed for the key to display
  * @author Mousefire
  */
 public class Key extends Sprite {   

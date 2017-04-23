@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 /**
- *
+ * All the methods and usage needed for an enemy
  * @author Mousefire
  */
 public class Enemy extends Sprite{

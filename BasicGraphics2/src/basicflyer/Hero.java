@@ -17,7 +17,7 @@ import java.io.IOException;
 
 
 /**
- *
+ * All the methods and usage needed for a hero
  * @author vhoffm2
  */
 public class Hero extends Sprite {

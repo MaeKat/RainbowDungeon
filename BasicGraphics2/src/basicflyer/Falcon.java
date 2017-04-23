@@ -15,7 +15,7 @@ import javax.swing.JOptionPane;
 
 /**
  * This class contains the info for controls and
- * implementaion of the Hostage 
+ * imp of the Hostage 
  * trying to escape
  * @author vhoffm2
  */

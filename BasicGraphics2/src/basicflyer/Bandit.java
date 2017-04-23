@@ -15,7 +15,7 @@ import java.awt.Dimension;
 import java.io.IOException;
 
 /**
- *
+ * This contains all the methods for Bandit 
  * @author Mousefire
  */
 public class Bandit extends Enemy {

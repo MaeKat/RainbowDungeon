@@ -14,7 +14,8 @@ import java.awt.Dimension;
 import java.io.IOException;
 
 /**
- *
+ * All the methods and usage needed for Walls to exist and interact with the 
+ * other sprites
  * @author Mousefire
  */
 public class Wall extends Sprite {

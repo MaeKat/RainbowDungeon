@@ -15,13 +15,19 @@ import java.awt.Dimension;
 import java.io.IOException;
 
 /**
- *
+ * All the methods and usage needed for Smoke to display and interact
  * @author Mousefire
  */
 public class Smoke extends Enemy {
 
+    /**
+     * pic for smoke var
+     */
     public Picture initialPic;
 
+    /**
+     * initializes the clip for smoke 
+     */
     public Smoke() {
         this.clip = new ReusableClip("cough.wav");
     }
@@ -31,6 +37,8 @@ public class Smoke extends Enemy {
      * adds it to the SpriteComponent.
      *
      * @param sc
+     * @param xVal
+     * @param yVal
      * @throws IOException
      */
     public void init(SpriteComponent sc, int xVal, int yVal) throws IOException {
