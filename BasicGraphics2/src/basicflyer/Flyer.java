@@ -1,7 +1,9 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * To run file ensure that the main class is set to basicflyer.Flyer 
+ * then run 
+ * The program is a game called Rainbow Dungeon which is a single level dungeon 
+ *  where the player's goal is to get the key with out dying and get to the 
+ * locked door
  */
 package basicflyer;
 

@@ -72,6 +72,7 @@ public class Hero extends Sprite {
     }
 /**
      * impact reactions for the hero
+     * adds 20HP if health is at 100% and adds 40HP if health is below 100%
      * @param  se
      */
  @Override
@@ -79,15 +80,20 @@ public class Hero extends Sprite {
         if (se.eventType == CollisionEventType.WALL) {
                 setActive(false);      
         }
-        Falcon f = new Falcon();
+
         if (se.eventType == CollisionEventType.SPRITE) {
             if (se.sprite2 instanceof Falcon) {
-                if (f.getHealth()<100){
-                    f.gainHealth(40);//if health is below 100% add 40HP
-                setActive(false);}
+                if (se.sprite2.getHealth()<100){
+                    se.sprite2.gainHealth(40);//if health is below 100% add 40HP
+                setActive(false);
+                System.out.println("H"+ se.sprite2.getHealth());
+                }
+                
                 else{
-                    f.gainHealth(20);//else add only 20HP   
-                    setActive(false);}
+                    se.sprite2.gainHealth(20);//else add only 20HP   
+                    setActive(false);
+                System.out.println("H"+ se.sprite2.getHealth());
+                }
             }
  
         }  
