@@ -1,2 +1,0 @@
-walkthedog.WalkDog
-walkthedog.Dog
