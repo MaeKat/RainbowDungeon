@@ -20,3 +20,7 @@ Guide for the cheater:
 
 Documentation in depth:
  	Go in Netbeans to Run -> Generate Javadoc(BasicGraphics)
+
+        OR
+
+        Read the psedoJavaDoc.txt (for the not as kool version)

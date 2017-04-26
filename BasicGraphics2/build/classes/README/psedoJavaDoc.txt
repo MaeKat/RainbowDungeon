@@ -1,0 +1,155 @@
+Bandit()
+
+void init(SpriteComponent sc, int xVal, int yVal) 
+Initializes the sprite, setting its picture, position, and speed.
+ 
+void moveX(double direction) 
+keeps a static x for bandit has a def pos
+ 
+void moveY(double direction) 
+keeps a static y for bandit has a def pos
+ 
+void processEvent(SpriteCollisionEvent se) 
+impact reactions for bandit 
+
+
+Capitao() 
+
+void init(SpriteComponent sc, int xVal, int yVal) 
+Initializes the sprite, setting its picture, position, and speed.
+ 
+void moveX(double direction) 
+static pos
+ 
+void moveY(double direction) 
+static pos
+ 
+void processEvent(SpriteCollisionEvent se) 
+impact reactions for capitao 
+
+Castle() 
+
+void init(SpriteComponent sc, int xVal, int yVal) 
+Initializes the sprite, setting its picture, position, and speed.
+ 
+void moveX(double direction) 
+static pos
+ 
+void moveY(double direction) 
+static pos
+ 
+void processEvent(SpriteCollisionEvent se) 
+impact reactions for castle 
+
+
+Door() 
+
+void init(SpriteComponent sc, int xVal, int yVal) 
+Initializes the sprite, setting its picture, position, and speed. 
+
+Enemy()
+
+java.lang.String enemyCreator() 
+creates a random enemy
+ 
+void init(SpriteComponent sc) 
+Initializes the sprite, setting its picture, position, and speed.
+ 
+void moveX(double direction) 
+moves in the X direction
+ 
+void moveY(double direction) 
+moves in the Y direction
+ 
+void processEvent(SpriteCollisionEvent se) 
+Override this method to determine how the sprite will react when it collides with another sprite or with the boundaries of the screen.
+ 
+void setActive(boolean b) 
+activates enemies and keeps count of enemies 
+
+Falcon() 
+
+void gainHealth(int hitPoints) 
+Allows the Hostage to gain health
+ 
+int getHealth() 
+Gets the health of the hostage
+ 
+double getScore() 
+Gets the score
+ 
+void init(SpriteComponent sc) 
+Initializes the sprite, setting its picture, position, and speed.
+ 
+void loseHealth(int hitPoints) 
+when the hostage takes damage the points are deducted and kills the hostage if he loses too much health
+ 
+void moveX(double direction) 
+Causes the hostage to move left and right
+ 
+void moveY(double direction) 
+Causes the hostage to move from one square to another with each button press up or down only
+ 
+void preMove() 
+Here we update the velocity and picture if they need updating.
+ 
+void processEvent(SpriteCollisionEvent se) 
+This sprite only reacts to collisions with important interaction for hostage
+ 
+void setHealth(int totalHealth) 
+Initializes the health for the Hostage
+ 
+void setScore(int pointsGained) 
+Sets the score 
+
+
+Flyer() 
+
+static void main(java.lang.String[] args)  
+
+Hero()
+
+void init(SpriteComponent sc, int xVal, int yVal) 
+Initializes the sprite, setting its picture, position, and speed.
+ 
+void processEvent(SpriteCollisionEvent se) 
+impact reactions for the hero adds 20HP if health is at 100% and adds 40HP if health is below 100%
+ 
+void setActive(boolean b) 
+sets hero to active 
+
+Key()
+
+void init(SpriteComponent sc, int xVal, int yVal) 
+Initializes the sprite, setting its picture, position, and speed. 
+
+Smoke() 
+initializes the clip for smoke
+
+void init(SpriteComponent sc, int xVal, int yVal) 
+Initializes the sprite, setting its picture, position, and speed.
+ 
+void moveX(double direction) 
+static pos
+ 
+void moveY(double direction) 
+static pos
+ 
+void processEvent(SpriteCollisionEvent se) 
+impact reactions for smoke 
+
+Wall() 
+
+void init(SpriteComponent sc, int xVal, int yVal) 
+Initializes the sprite, setting its picture, position, and speed.
+ 
+void inti3High(SpriteComponent sc, int xVal, int yVal)  
+void intiBorderHor(SpriteComponent sc, int xVal, int yVal) 
+Initializes the sprite, setting its picture, position, and speed.
+ 
+void intiBorderVert(SpriteComponent sc, int xVal, int yVal) 
+for vertical border.
+ 
+void processEvent(SpriteCollisionEvent se) 
+impact reactions for walls 
+
