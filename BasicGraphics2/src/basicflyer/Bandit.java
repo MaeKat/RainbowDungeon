@@ -13,6 +13,7 @@ import basicgraphics.sounds.ReusableClip;
 import java.applet.AudioClip;
 import java.awt.Dimension;
 import java.io.IOException;
+import javax.swing.JOptionPane;
 
 /**
  * This contains all the methods for Bandit 
@@ -93,6 +94,8 @@ public class Bandit extends Enemy {
                 if (se.sprite2.getHealth()==0){
                 
                 se.sprite2.setActive(false);
+                JOptionPane.showMessageDialog(sc, "You died! Game Over!");
+                 System.exit(0);
                 }
               System.out.println( "B"+se.sprite2.getHealth());
             }

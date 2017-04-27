@@ -13,6 +13,7 @@ import basicgraphics.sounds.ReusableClip;
 import java.applet.AudioClip;
 import java.awt.Dimension;
 import java.io.IOException;
+import javax.swing.JOptionPane;
 
 /**
  * All the methods and usage needed for Smoke to display and interact
@@ -98,6 +99,12 @@ public class Smoke extends Enemy {
                 setActive(false);
                 clip.play();
                 System.out.println("S" + se.sprite2.getHealth());
+            if (se.sprite2.getHealth()==0){
+                
+                se.sprite2.setActive(false);
+                JOptionPane.showMessageDialog(sc, "You died! Game Over!");
+                 System.exit(0);
+                }
             }
             if (se.sprite2 instanceof Plasma) {
 
