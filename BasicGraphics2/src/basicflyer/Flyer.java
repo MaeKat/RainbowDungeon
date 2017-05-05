@@ -23,7 +23,7 @@ import java.io.IOException;
  *
  * @author vhoffm2 + sbrandt
  */
-public class Flyer {
+public class Flyer { 
 
     public static void main(String[] args) throws IOException {
         BasicFrame bf = new BasicFrame("Flyer");

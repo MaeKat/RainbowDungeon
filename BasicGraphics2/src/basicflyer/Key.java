@@ -53,6 +53,24 @@ public class Key extends Sprite {
 
   AudioClip clip;
      public void processEvent(SpriteCollisionEvent se) {
+         if (se.xlo) {
+            setX(sc.getSize().width-getWidth());
+        }
+        if (se.xhi) {
+            setX(0);
+        }
+        if (se.ylo) {
+            setY(sc.getSize().height-getHeight());
+        }
+        if (se.yhi) {
+            setY(0);
+        }
+           
+         if(se.sprite2 != null) {
+        } else {
+            setActive(false);
+        }
+         
      if (se.sprite2 instanceof Plasma) {            
                 se.sprite2.setActive(false);
                  clip.play();
