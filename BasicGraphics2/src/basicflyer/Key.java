@@ -7,7 +7,10 @@ package basicflyer;
 
 import basicgraphics.SpriteComponent;
 import basicgraphics.Sprite;
+import basicgraphics.SpriteCollisionEvent;
 import basicgraphics.images.Picture;
+import basicgraphics.sounds.ReusableClip;
+import java.applet.AudioClip;
 import java.awt.Dimension;
 import java.io.IOException;
 
@@ -16,6 +19,10 @@ import java.io.IOException;
  * @author Mousefire
  */
 public class Key extends Sprite {   
+    
+     public Key() {
+        this.clip = new ReusableClip("cough.wav");
+    }
         public Picture initialPic;
     /**
      * Initializes the sprite, setting its picture,
@@ -43,4 +50,15 @@ public class Key extends Sprite {
         }
     }
     SpriteComponent sc;  
+
+  AudioClip clip;
+     public void processEvent(SpriteCollisionEvent se) {
+     if (se.sprite2 instanceof Plasma) {            
+                se.sprite2.setActive(false);
+                 clip.play();
+                }
+     
+     }
+
+
 }

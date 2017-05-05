@@ -55,7 +55,20 @@ class Plasma extends Sprite {
      */
     @Override
     public void processEvent(SpriteCollisionEvent se) {
-        if (se.sprite2 != null) {
+             if (se.xlo) {
+            setX(0);
+        }
+        if (se.xhi) {
+            setX(0);
+        }
+        if (se.ylo) {
+            setY(0);
+        }
+        if (se.yhi) {
+            setY(0);
+        }
+           
+         if(se.sprite2 != null) {
         } else {
             setActive(false);
         }

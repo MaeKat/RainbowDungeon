@@ -119,6 +119,24 @@ public class Wall extends Sprite {
     @Override
     public void processEvent(SpriteCollisionEvent se) {
 
+               if (se.xlo) {
+            setX(sc.getSize().width-getWidth());
+        }
+        if (se.xhi) {
+            setX(0);
+        }
+        if (se.ylo) {
+            setY(sc.getSize().height-getHeight());
+        }
+        if (se.yhi) {
+            setY(0);
+        }
+           
+         if(se.sprite2 != null) {
+        } else {
+            setActive(false);
+        }
+        
         if (se.eventType == CollisionEventType.SPRITE) {
             if (se.sprite2 instanceof Falcon) {//if hit move down one with barricade
                 se.sprite2.setX(se.sprite2.getPrevX());

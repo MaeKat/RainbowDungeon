@@ -77,10 +77,32 @@ public class Hero extends Sprite {
      */
  @Override
     public void processEvent(SpriteCollisionEvent se) {
+              if (se.xlo) {
+            setX(sc.getSize().width-getWidth());
+        }
+        if (se.xhi) {
+            setX(0);
+        }
+        if (se.ylo) {
+            setY(sc.getSize().height-getHeight());
+        }
+        if (se.yhi) {
+            setY(0);
+        }
+           
+         if(se.sprite2 != null) {
+        } else {
+            setActive(false);
+        }
+ 
         if (se.eventType == CollisionEventType.WALL) {
                 setActive(false);      
         }
 
+         if (se.sprite2 instanceof Plasma) {
+                se.sprite2.setActive(false);//turn off sprite
+            }
+        
         if (se.eventType == CollisionEventType.SPRITE) {
             if (se.sprite2 instanceof Falcon) {
                 if (se.sprite2.getHealth()<100){

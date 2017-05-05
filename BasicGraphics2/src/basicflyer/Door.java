@@ -6,17 +6,25 @@
 package basicflyer;
 
 import basicgraphics.Sprite;
+import basicgraphics.SpriteCollisionEvent;
 import basicgraphics.SpriteComponent;
 import basicgraphics.images.Picture;
+import basicgraphics.sounds.ReusableClip;
 import java.awt.Dimension;
 import java.io.IOException;
-
+import java.applet.AudioClip;
 /**
  * All the methods and usage needed for Door
  * @author Mousefire
  */
 public class Door extends Sprite {
        
+     
+    public Door() {
+        this.clip = new ReusableClip("cough.wav");
+    }
+    
+    
         public Picture initialPic;
     /**
      * Initializes the sprite, setting its picture,
@@ -42,5 +50,14 @@ public class Door extends Sprite {
         }
     }
     SpriteComponent sc;
+    
+         AudioClip clip;
+     public void processEvent(SpriteCollisionEvent se) {
+     if (se.sprite2 instanceof Plasma) {            
+                se.sprite2.setActive(false);
+                 clip.play();
+                }
+     
+     }
     
 }
